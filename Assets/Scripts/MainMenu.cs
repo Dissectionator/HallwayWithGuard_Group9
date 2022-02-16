@@ -5,9 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    public void MoveToScene(int sceneID)
+    public void PlayGame ()
     {
-        SceneManager.LoadScene(sceneID);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     public void QuitGame ()
