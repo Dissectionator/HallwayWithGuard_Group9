@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -8,8 +9,9 @@ public class PlayerController : MonoBehaviour
     public CharacterController controller;
     public AudioSource musicSource;
     public AudioClip musicClipOne;
+    //public AudioClip musicClipTwo;
 
-    public float footSteps = 0.2f;
+    public float footSteps = 0.6f;
     float footStepsTime;
     public float speed=5f;
     // Start is called before the first frame update
@@ -27,7 +29,7 @@ public class PlayerController : MonoBehaviour
         Vector3 move = transform.right * x + transform.forward * z;
 
         controller.Move(move*speed*Time.deltaTime);
-        if(x != 0 || z != 0 )
+         if(x != 0 || z != 0 )
         {
             footSteps-=Time.deltaTime;
             //play footsteps
@@ -42,7 +44,16 @@ public class PlayerController : MonoBehaviour
         {
             musicSource.Stop();
         }
+        
     }
+        private void OnTriggerEnter( Collider other)
+    {
+        if(other.gameObject.CompareTag("Pickup"))
+        {
+            SceneManager.LoadScene("WinScreen");
+        }
+    }
+    
 
     
 }
