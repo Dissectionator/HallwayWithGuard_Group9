@@ -579,7 +579,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 4.3
+  m_Speed: 4.25
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -770,7 +770,7 @@ MonoBehaviour:
   controller: {fileID: 474932469}
   musicSource: {fileID: 474932472}
   musicClipOne: {fileID: 8300000, guid: a490975e6887c76449023ee68f801402, type: 3}
-  footSteps: 0.3
+  footSteps: 0.4
   speed: 5
 --- !u!82 &474932472
 AudioSource:
@@ -784,13 +784,13 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.601
   m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 185
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -3270,7 +3270,6 @@ GameObject:
   - component: {fileID: 1663347011}
   - component: {fileID: 1663347010}
   - component: {fileID: 1663347009}
-  - component: {fileID: 1663347012}
   m_Layer: 0
   m_Name: PickupPlaceHolder
   m_TagString: Pickup
@@ -3355,18 +3354,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1663347007}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1663347012
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1663347007}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9053813499ffc3439e23011b88d6f14, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1731871355
 PrefabInstance:
   m_ObjectHideFlags: 0

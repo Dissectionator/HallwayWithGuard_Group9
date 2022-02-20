@@ -315,7 +315,6 @@
 "Assets/Scripts/EnemyController.cs"
 "Assets/Scripts/MainMenu.cs"
 "Assets/Scripts/MouseLook.cs"
-"Assets/Scripts/PickUpController.cs"
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/ReturnToMenu.cs"
 "Assets/Scripts/SimpleGuardController.cs"
