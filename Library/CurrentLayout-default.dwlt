@@ -100,7 +100,7 @@ MonoBehaviour:
   m_MinSize: {x: 880, y: 492}
   m_MaxSize: {x: 16005, y: 14042}
   vertical: 0
-  controlID: 107
+  controlID: 17
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -276,7 +276,7 @@ MonoBehaviour:
   m_MinSize: {x: 605, y: 492}
   m_MaxSize: {x: 12005, y: 14042}
   vertical: 1
-  controlID: 16
+  controlID: 26
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -302,7 +302,7 @@ MonoBehaviour:
   m_MinSize: {x: 605, y: 221}
   m_MaxSize: {x: 12005, y: 4021}
   vertical: 0
-  controlID: 17
+  controlID: 27
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -366,21 +366,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Scripts
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: Z:\Niko HW\Hallway With Guard\HallwayWithGuard_Group9
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 7e460000
-    m_LastClickedID: 18046
+    m_SelectedIDs: 80460000
+    m_LastClickedID: 18048
     m_ExpandedIDs: 000000007046000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -531,9 +531,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: 50070000
       m_LastClickedID: 0
-      m_ExpandedIDs: 1cecffff8af7ffffacf9ffffb6f9ffffecf9ffff56fbffffa2490000b4490000c4490000
+      m_ExpandedIDs: 24f0ffff6af0ffff0af1ffff16f1ffff24f1ffff60f2ffff6ef2ffff56fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -593,9 +593,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 381.6377, y: 630.16705, z: -79.24783}
+    m_Target: {x: 329.83133, y: 618.7573, z: -87.80041}
     speed: 2
-    m_Value: {x: 381.6377, y: 630.16705, z: -79.24783}
+    m_Value: {x: 331.281, y: 620.4461, z: -86.90287}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -646,9 +646,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 122.90279
+    m_Target: 208.42856
     speed: 2
-    m_Value: 122.90279
+    m_Value: 199.45317
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -666,7 +666,7 @@ MonoBehaviour:
     m_FarClip: 10000
     m_DynamicClip: 1
     m_OcclusionCulling: 0
-  m_LastSceneViewRotation: {x: -0.14494587, y: -0.6399044, z: 0.12458568, w: -0.74434}
+  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
