@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CameraController : MonoBehaviour
 {
@@ -15,7 +16,7 @@ public class CameraController : MonoBehaviour
     {
         if(Input.GetKeyDown("escape"))
         {
-            Application.Quit();
+            SceneManager.LoadScene("MainMenu");
         }
     }
 }
