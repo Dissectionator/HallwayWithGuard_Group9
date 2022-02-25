@@ -19,7 +19,7 @@ public class SimpleGuardController : MonoBehaviour
     void Update()
     {
         
-        navMeshAgent.destination=movePositionTransform.position;
+        //navMeshAgent.destination=movePositionTransform.position;
 
     }
 

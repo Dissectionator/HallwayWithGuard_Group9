@@ -9,8 +9,8 @@ public class PlayerController : MonoBehaviour
     public CharacterController controller;
     public AudioSource musicSource;
     public AudioClip musicClipOne;
-    //public AudioClip musicClipTwo;
-
+    public AudioClip musicClipTwo;
+    
     public float footSteps = 0.6f;
     float footStepsTime;
     public float speed=5f;
@@ -50,6 +50,8 @@ public class PlayerController : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Pickup"))
         {
+            musicSource.clip = musicClipTwo;
+            musicSource.Play();
             SceneManager.LoadScene("WinScreen");
         }
     }
