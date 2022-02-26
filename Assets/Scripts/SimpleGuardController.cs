@@ -23,6 +23,7 @@ public class SimpleGuardController : MonoBehaviour
 
     }
 
+//Lose Condition
     private void OnCollisionEnter( Collision other)
     {
         if(other.gameObject.CompareTag("Player"))

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 
 public class EnemyController : MonoBehaviour
 {
@@ -85,6 +86,15 @@ public class EnemyController : MonoBehaviour
             currentPoint ++ ;
         }
     
+    }
+
+    //Lose Condition
+    private void OnCollisionEnter( Collision other)
+    {
+        if(other.gameObject.CompareTag("Player"))
+        {
+            SceneManager.LoadScene("LoseScreen");
+        }
     }
 
    

@@ -28,7 +28,9 @@ public class PlayerController : MonoBehaviour
 
         Vector3 move = transform.right * x + transform.forward * z;
 
+        //player movement
         controller.Move(move*speed*Time.deltaTime);
+
          if(x != 0 || z != 0 )
         {
             footSteps-=Time.deltaTime;
@@ -46,6 +48,8 @@ public class PlayerController : MonoBehaviour
         }
         
     }
+
+    // Win condition
         private void OnTriggerEnter( Collider other)
     {
         if(other.gameObject.CompareTag("Pickup"))
