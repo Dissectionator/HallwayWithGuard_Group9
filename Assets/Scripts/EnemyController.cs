@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class EnemyController : MonoBehaviour
 {
-    public Transform target;
+    [SerializeField] private Transform target;
     public float attackRadius = 20f;
 
     private NavMeshAgent navMeshAgent;
@@ -17,13 +17,13 @@ public class EnemyController : MonoBehaviour
 
     float maxTime = 3f;
 
-    private int currentPoint;
+    private int currentPoint=0;
 
     bool inRange = false;
     public AudioSource musicSource;
     public AudioClip musicClipOne;
 
-    void Start()
+    void Awake()
     {
        navMeshAgent=GetComponent<NavMeshAgent>();
        currentPoint = 0;
@@ -52,6 +52,7 @@ public class EnemyController : MonoBehaviour
 
                 Vector3 moveTo = Vector3.MoveTowards(current: transform.position, target.position,maxDistanceDelta:100f);
                 navMeshAgent.destination = moveTo;
+                //navMeshAgent.destination = target.position;
                 
             }
 

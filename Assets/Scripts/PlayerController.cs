@@ -58,7 +58,12 @@ public class PlayerController : MonoBehaviour
             musicSource.Play();
             SceneManager.LoadScene("WinScreen");
         }
+        if(other.gameObject.CompareTag("Enemy"))
+        {
+            SceneManager.LoadScene("LoseScreen");
+        }
     }
+    
     
 
     
