@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
     
     public float footSteps = 0.6f;
     float footStepsTime;
-    public float speed=7f;
+    public float speed=5f;
     // Start is called before the first frame update
     void Start()
     {
@@ -46,16 +46,7 @@ public class PlayerController : MonoBehaviour
         {
             musicSource.Stop();
         }
-    
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            SceneManager.LoadScene("MainMenu");
-        }
-
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            Application.Quit();
-        }
+        
     }
 
     // Win condition
@@ -67,7 +58,12 @@ public class PlayerController : MonoBehaviour
             musicSource.Play();
             SceneManager.LoadScene("WinScreen");
         }
+        if(other.gameObject.CompareTag("Enemy"))
+        {
+            SceneManager.LoadScene("LoseScreen");
+        }
     }
+    
     
 
     
