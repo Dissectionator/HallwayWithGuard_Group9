@@ -63,6 +63,13 @@ public class PlayerController : MonoBehaviour
             SceneManager.LoadScene("LoseScreen");
         }
     }
+    private void OnCollisionEnter(Collision other)
+    {
+        if(other.gameObject.CompareTag("Enemy"))
+        {
+            SceneManager.LoadScene("LoseScreen");
+        }
+    }
     
     
 
