@@ -23,7 +23,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 1
-  controlID: 3550
+  controlID: 85
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -137,7 +137,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 3551
+  controlID: 86
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -162,7 +162,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 3552
+  controlID: 87
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -187,7 +187,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 3553
+  controlID: 60
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -241,10 +241,10 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 587}
+      scrollPos: {x: 0, y: 699}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: cef9ffffcafaffffee470000a4480000
+      m_ExpandedIDs: a6ecffff56fbffffc846000014470000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -331,9 +331,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -47.21854, y: -23.349703, z: 23.176882}
+    m_Target: {x: 27.388727, y: 0.17382786, z: 8.0035925}
     speed: 2
-    m_Value: {x: -47.21854, y: -23.349703, z: 23.176882}
+    m_Value: {x: 27.388727, y: 0.17382786, z: 8.0035925}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -380,13 +380,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.6009124, y: -0.017183956, z: 0.012927573, w: 0.79903626}
+    m_Target: {x: 0.02238271, y: 0.97529095, z: -0.117409915, w: 0.18584901}
     speed: 2
-    m_Value: {x: 0.6009073, y: -0.01718381, z: 0.012927464, w: 0.7990295}
+    m_Value: {x: 0.022382505, y: 0.975282, z: -0.117408834, w: 0.18584731}
   m_Size:
-    m_Target: 15.079047
+    m_Target: 3.054376
     speed: 2
-    m_Value: 15.079047
+    m_Value: 3.054376
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -476,22 +476,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Audio/SFX
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Audio/SFX
   m_LastFoldersGridSize: -1
   m_LastProjectPath: Z:\Niko HW\Hallway With Guard\HallwayWithGuard_Group9
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 60470000
-    m_LastClickedID: 18272
-    m_ExpandedIDs: 000000004a4700004c47000000ca9a3b
+    m_SelectedIDs: 62520000
+    m_LastClickedID: 21090
+    m_ExpandedIDs: 000000008251000084510000b051000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -519,7 +519,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000004a4700004c47000000ca9a3b
+    m_ExpandedIDs: 000000008251000084510000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -544,8 +544,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: a20a0000
-    m_LastClickedInstanceID: 2722
+    m_SelectedInstanceIDs: ec450000
+    m_LastClickedInstanceID: 17900
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c623000000000000
     m_RenameOverlay:
@@ -619,8 +619,8 @@ MonoBehaviour:
     y: 0
     width: 415
     height: 1307
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -659,7 +659,7 @@ MonoBehaviour:
     m_CachedPref: 160
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: 2722
+  m_LastInspectedObjectInstanceID: 17900
   m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0

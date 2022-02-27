@@ -46,7 +46,7 @@ public class EnemyController : MonoBehaviour
                 musicSource.clip = musicClipOne;
                 musicSource.Play();
 
-                navMeshAgent.speed =10;
+                navMeshAgent.speed =8;
 
                 transform.LookAt(target);
 
