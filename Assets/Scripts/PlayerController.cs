@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
     
     public float footSteps = 0.6f;
     float footStepsTime;
-    public float speed=5f;
+    public float speed=7f;
     // Start is called before the first frame update
     void Start()
     {
@@ -46,7 +46,11 @@ public class PlayerController : MonoBehaviour
         {
             musicSource.Stop();
         }
-        
+    
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            SceneManager.LoadScene("MainMenu");
+        }
     }
 
     // Win condition
