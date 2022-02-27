@@ -51,6 +51,11 @@ public class PlayerController : MonoBehaviour
         {
             SceneManager.LoadScene("MainMenu");
         }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
     }
 
     // Win condition
