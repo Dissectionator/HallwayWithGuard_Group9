@@ -22,18 +22,21 @@ public class EnemyController : MonoBehaviour
     bool inRange = false;
     public AudioSource musicSource;
     public AudioClip musicClipOne;
+    Animator anim;
 
     void Awake()
     {
        navMeshAgent=GetComponent<NavMeshAgent>();
        currentPoint = 0;
+
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
 
-        float disTo = Vector3.Distance(transform.position, target.position);
+
+    float disTo = Vector3.Distance(transform.position, target.position);
 
         if (disTo <= attackRadius)
         {
@@ -46,7 +49,7 @@ public class EnemyController : MonoBehaviour
                 musicSource.clip = musicClipOne;
                 musicSource.Play();
 
-                navMeshAgent.speed =8;
+                navMeshAgent.speed =35;
 
                 transform.LookAt(target);
 
@@ -61,7 +64,9 @@ public class EnemyController : MonoBehaviour
         {
             musicSource.Stop();
             inRange = false;
+
             BackToPath();
+
         }
 
     }
@@ -70,7 +75,7 @@ public class EnemyController : MonoBehaviour
     {
         if(inRange == false && navMeshAgent.remainingDistance <2f)
         {
-            navMeshAgent.speed = 3;
+            navMeshAgent.speed = 15;
             navMeshAgent.destination = destinations [currentPoint].position;
             UpdateCurrentPoint();
         }
