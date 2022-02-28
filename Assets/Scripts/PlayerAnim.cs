@@ -16,16 +16,18 @@ public class PlayerAnim : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        bool IsWalk = anim.GetBool(IsWalkHash);
-        bool PressW = Input.GetKey("w");
-        if (!IsWalk && PressW)
-        {
-            anim.SetBool(IsWalkHash, true);
-        }
+        float x = Input.GetAxis("Horizontal");
+        float z = Input.GetAxis("Vertical");
 
-        if (IsWalk && !PressW)
+    if(x != 0 || z != 0 )
+    {
+        anim.SetBool(IsWalkHash, true);
+    }
+        else
         {
             anim.SetBool(IsWalkHash, false);
         }
+
+
     }
 }

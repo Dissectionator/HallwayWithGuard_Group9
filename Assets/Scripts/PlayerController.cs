@@ -15,9 +15,14 @@ public class PlayerController : MonoBehaviour
     float footStepsTime;
     public float speed=7f;
     // Start is called before the first frame update
+    Animator anim;
+    int IsWalkHash;
     void Start()
     {
         footStepsTime=footSteps;
+
+                anim = GetComponent<Animator>();
+                IsWalkHash = Animator.StringToHash("IsWalk");
     }
 
     // Update is called once per frame
@@ -55,6 +60,18 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             SceneManager.LoadScene("MainMenu");
+        }
+
+        bool IsWalk = anim.GetBool(IsWalkHash);
+        bool PressW = Input.GetKey("w");
+        if (!IsWalk && PressW)
+        {
+            anim.SetBool(IsWalkHash, true);
+        }
+
+        if (IsWalk && !PressW)
+        {
+            anim.SetBool(IsWalkHash, false);
         }
 
         
