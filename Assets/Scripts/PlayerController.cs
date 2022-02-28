@@ -46,6 +46,17 @@ public class PlayerController : MonoBehaviour
         {
             musicSource.Stop();
         }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+             Application.Quit();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            SceneManager.LoadScene("MainMenu");
+        }
+
         
     }
 
